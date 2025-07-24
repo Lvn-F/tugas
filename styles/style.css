@@ -60,7 +60,6 @@ a:focus-visible {
 .header {
     position: sticky;
     top: 0;
-    height: 64px;
     backdrop-filter: blur(16px);
     background: rgba(30, 41, 59, 0.75);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
@@ -74,6 +73,7 @@ a:focus-visible {
     justify-content: space-between;
     align-items: center;
     gap:2rem;
+    height: 5vh;
 }
 
 .brand {
@@ -179,13 +179,10 @@ a:focus-visible {
     text-align: center;
 }
 
-.featurerow {
-    display: flex;
-    flex-direction: row;
-}
+
 .feature-grid {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .feature-card {
@@ -251,7 +248,8 @@ a:focus-visible {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 24px
+    gap: 24px;
+    height: 5vh;
 }
 
 .footer p {
@@ -513,6 +511,16 @@ span {
 
 
 /* contact */
+.grid-contact {
+    display: grid;
+    grid-template-rows: 13% 70% 17%;
+}
+.contacttt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .contact {
     display: flex;
     flex-direction: row;
@@ -529,14 +537,17 @@ span {
     background-size: cover;
     border-radius: 12px;
 }
+.contactcontainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
 .concontent {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    gap:3rem;
-    margin:0 0 1rem 0;
-
 }
 .igbtn {
     background-color: hsl(302, 40%, 40%);
