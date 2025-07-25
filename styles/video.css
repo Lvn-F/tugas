@@ -1,0 +1,185 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    
+}
+h1, h2 {
+    color: hsl(0,0%,85%);
+    font-size: 2em;
+}
+p {
+    color: hsl(0,0%,85%);
+    font-size: 1.5em;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:focus-visible {
+    outline: 2px solid #a5b4fc;
+    outline-offset: 2px;
+}
+
+.roblos {
+    height: 50vw;
+    width:50vw;
+    margin:0 auto;
+    background-image: url(assets/roblos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+    /* Judul Halaman */
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+
+    /* Grid Galeri */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+
+    /* Card Video */
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+    /* Video Container */
+
+video,
+iframe {
+    width: 100%;
+    height: 200px;
+    display: block;
+    border: none;
+    border-radius: 10px 10px 0 0;
+}
+
+
+    /* Card Body */
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.card-desc {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+}
+
+
+    /* Efek Focus untuk Aksesibilitas */
+
+.card:focus {
+    outline: 3px solid #3498db;
+    outline-offset: 3px;
+}
+
+
+    /* Responsive Design */
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .roblos {
+        width: 90%;
+        height: 50vh;
+    }
+}
+
+
+    /* Loading Lazy untuk Video */
+
+video[loading="lazy"] {
+    background: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video[loading="lazy"]::before {
+    content: "Memuat video...";
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+
+    /* Tombol Play untuk Video */
+
+video {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+video:hover {
+    opacity: 0.9;
+}
+
+
+    /* Placeholder untuk Video yang gagal dimuat */
+
+video:after {
+    content: "Video tidak dapat dimuat";
+    display: none;
+    background: #e74c3c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+video[poster] {
+    background-size: cover;
+    background-position: center;
+}

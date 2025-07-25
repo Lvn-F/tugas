@@ -5,9 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>im@web - Gallery</title>
-        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="styles/gallery.css"/>
     </head>
-    <body>
+    <body class="grid-gallery">
         <header role="banner" class="header">
             <div class="container header-container">
                 <a href="index.html" class="brand" aria-label="Ima homepage">im@ Website</a>
@@ -24,7 +26,63 @@
 
 
         <div class="galleryContainer">
-            
+            <main class="galContainer" role="main" aria-label="Gallery">
+                <h1>Gallery Foto</h1>
+                <p class="galDescription">
+                    Kumpulan foto pilihan yang menampilkan objek wisata di provinsi lampung. klik pada foto untuk melihat lebih lanjut.
+                </p>
+                <section class="galGrid">
+                    <article class="galCard" tabindex="0" aria-label="Pantai dengan pasir putih yang jenrih">
+                        <img src="styles/assets/putih.png" alt="Pasir putih" loading="lazy">
+                        <div class="galCardBody">
+                            <h2 class="galTitle">
+                                Pantai pasir putih <a href="https://regional.kompas.com/read/2022/11/25/053000478/pantai-pasir-putih-lampung--daya-tarik-harga-tiket-dan-jam-buka?page=all">-></a>
+                            </h2>
+                            <p class="galDesc">
+                                Pantai indah dengan pasir putih dan air laut yang jernih membiru
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <section class="galGrid">
+                    <article class="galCard" tabindex="0" aria-label="Pantai krui lampung">
+                        <img src="styles/assets/krui.jpg" alt="Pantai krui" loading="lazy">
+                        <div class="galCardBody">
+                            <h2 class="galTitle">
+                                Pantai kerui lampung <a href="https://www.tripadvisor.co.id/Attraction_Review-g3138249-d3600214-Reviews-Pantai_Krui-Krui_Lampung_Sumatra.html">-></a>
+                            </h2>
+                            <p class="galDesc">
+                                Pantai krui menawarkan keindahan ombak yang cocok untuk berselancar, dengan panorama laut biru dan suasana yang tenang khas pesisir barat lampung.
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <section class="galGrid">
+                    <article class="galCard" tabindex="0" aria-label="Pantai klara lampung">
+                        <img src="styles/assets/klara.png" alt="Pantai klara" loading="lazy">
+                        <div class="galCardBody">
+                            <h2 class="galTitle">
+                                Pantai klara <a href="https://regional.kompas.com/read/2023/02/22/234545178/pantai-klara-lampung-daya-tarik-harga-tiket-dan-rute">-></a>
+                            </h2>
+                            <p class="galDesc">
+
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <section class="galGrid">
+                    <article class="galCard" tabindex="0" aria-label="Pantai rio">
+                        <img src="styles/assets/rio.jpeg" alt="Pantai rio" loading="lazy">
+                        <div class="galCardBody">
+                            <h2 class="galTitle">
+                                pantai rio beach <a href="https://www.detik.com/sumbagsel/wisata/d-7402960/pantai-rio-by-the-beach-wisata-baru-di-lampung-selatan-yang-mempesona">-></a>
+                            </h2>
+                            <p class="galDesc">
+                                Pantai rio menawarkan situasi yang tenang dengan hamparan pasir putih dan ombak yang lembut, cocok untuk bersantai dan menikmati keindahan alam.
+                            </p>
+                        </div>
+                    </article>
+            </main>
         </div>
 
         <footer class="footer" role="contentinfo">

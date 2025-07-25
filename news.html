@@ -5,7 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>im@web - News</title>
-        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="styles/news.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
     </head>
     <body>
         <header role="banner" class="header">
@@ -22,7 +25,71 @@
             </div>
         </header>
 
-
+        <div class="news">
+            <main class="beritaContainer" role="main" aria-label="berita">
+                <h1>Kumpulan berita</h1>
+                <p class="description">
+                    Kumpulan berita tentang kriminal, teknologi, hiburan, politik, dan korupsi. 
+                    Tekan atau klik pada selengkapnya agar dapat melihat berita tersebut
+                </p>
+                <section class="berita">
+                    <article class="newsCard" tabindex="0">
+                        <img src="kriminal.jpg" alt="berita kriminal" loading="lazy">
+                        <div class="newsCardBody">
+                            <h2 class="newsTitle">Berita kriminal</h2>
+                            <p class="newsDesc">
+                                Pria di bandar lampung tewas ditusuk
+                            </p>
+                            <p>
+                                <a href="https://www.detik.com/sumbagsel/hukum-dan-kriminal/d-776572/pria-di-bandar-lampung-tewas-polisi-buru-pelakunya">Selengkapnya</a>
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <section class="berita">
+                    <article class="newsCard" tabindex="0">
+                        <img src="teknologi" alt="berita teknologi" loading="lazy">
+                        <div class="newsCardBody">
+                            <h2 class="newsTitle">Berita teknologi</h2>
+                            <p class="newsDesc">
+                                Kemajuan teknologi dan peran program studi sistem informasi dalam menyongsong
+                            </p>
+                            <p>
+                                <a href="https://news.bsi.ac.id/berita/kemajuan-teknologi-dan-peran-sistem-informasi">Selengkapnya</a>
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <section class="berita">
+                    <article class="newsCard" tabindex="0">
+                        <img src="hiburan.jpg" alt="berita hiburan" loading="lazy">
+                        <div class="newsCardBody">
+                            <h2 class="newsTitle">Berita Hiburan</h2>
+                            <p class="newsDesc">
+                                Disney rilis proyek baru sebagai wahana hiburan
+                            </p>
+                            <p>
+                                <a href="https:/jogja.antaranews.com/berita/709959/disney-rilis--proyek-baru-berbagai-wahana-atraksi-hiburan">Selengkapnya</a>
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <section class="berita">
+                    <article class="newsCard" tabindex="0">
+                        <img src="korupsi.jpg" alt="berita korupsi" loading="lazy">
+                        <div class="newsCardBody">
+                            <h2 class="newsTitle">Berita korupsi</h2>
+                            <p class="newsDesc">
+                                KPK sedang menyidik kasus gratifikasi pengadaan barang dan jasa di lingkungan
+                            </p>
+                            <p>
+                                <a href="https://www.beritasatu.com/2898758/gratifikasi-tembus-rp-17-m-ini-4-fakta-terbaru-kasus-korupsi-di-mpr">Selengkapnya</a>
+                            </p>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
 
         <footer class="footer" role="contentinfo">
             <div class="container footer-content">
