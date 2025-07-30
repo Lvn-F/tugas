@@ -24,7 +24,7 @@ h1 {
 }
 .galGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
 }
 .galCard {
@@ -43,6 +43,7 @@ h1 {
 }
 .galCard img {
     width: 100%;
+    height: 300px;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     transition: transform 0.3s ease;

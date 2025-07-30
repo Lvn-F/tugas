@@ -4,7 +4,7 @@
 }
 body {
     font-family: 'poppins', sans-serif;
-    background-color: hsl(0, 0%, 15%);
+    background-color: hsla(106, 27%, 15%, 0.777);
     text-align: justify;
 }
 h1, h2 {
@@ -61,7 +61,7 @@ a:focus-visible {
     position: sticky;
     top: 0;
     backdrop-filter: blur(16px);
-    background: rgba(30, 41, 59, 0.75);
+    background: rgba(31, 115, 57, 0.799);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
@@ -79,7 +79,7 @@ a:focus-visible {
 .brand {
     font-weight: 900;
     font-size: clamp(1.5rem, 2vw, 2rem);
-    background: linear-gradient(135deg, #6366f1 0%, #4ade80 100%);
+    background: linear-gradient(135deg, #707815 0%, #8ed8a9 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     user-select: none;
@@ -113,7 +113,7 @@ a:focus-visible {
 }
 
 .hero {
-    background: rgba(30, 41, 59, 0.8);
+    background: rgba(0, 96, 22, 0.8);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     margin: 0 24px 64px;
@@ -135,7 +135,7 @@ a:focus-visible {
 .hero-content p {
     font-size: clamp(1.1rem, 2vw, 1.25rem);
     margin-bottom: 26px;
-    color: #9413b8;
+    color: #15d80b;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -180,13 +180,13 @@ a:focus-visible {
 }
 
 
-.feature-grid {
+.features-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .feature-card {
-    background: rgba(30, 31, 50, 0.8);
+    background: rgba(0, 96, 22, 0.8);;
     border-radius: 24px;
     padding: 32px 24px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7);
