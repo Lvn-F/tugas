@@ -1,105 +1,106 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lovan - News</title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" type="text/css" href="styles/news.css"/>
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <title>Galeri Foto</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="styles/news.css">
+        <script defer src="script/script.js"></script>
     </head>
+
     <body>
-        <header role="banner" class="header">
-            <div class="container header-container">
-                <a href="index.html" class="brand" aria-label="Ima homepage">Lovan Website</a>
-                <nav role="navigation" aria-label="Primary navigation" class="nav">
-                    <a href="index.html" class="nav-link" tabindex="0">Home</a>
-                    <a href="news.html" class="nav-link" tabindex="0">News</a>
-                    <a href="gallery.html" class="nav-link" tabindex="0">Foto</a>
-                    <a href="video.html" class="nav-link" tabindex="0">Video</a>
-                    <a href="about.html" class="nav-link" tabindex="0">About</a>
-                    <a href="contact.html" class="nav-link" tabindex="0">Contact</a>
-                </nav>
+        <header class="navContainer">
+            <div class="navButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav hidden">
+                <div class="navBack">
+                    <div class="close"></div>
+                    <div class="close2"></div>
+                </div>
+                <ul>
+                    <li ><a href="index.html" class="navList">home</a></li>
+                    <li ><a href="news.html" class="navList">news</a></li>
+                    <li ><a href="photo.html" class="navList">photo</a></li>
+                    <li ><a href="video.html" class="navList">video</a></li>
+                    <li ><a href="profile.html" class="navList">profile</a></li>
+                    <li ><a href="about.html" class="navList">about</a></li>
+                </ul>
             </div>
         </header>
 
-        <div class="news">
-            <main class="beritaContainer" role="main" aria-label="berita">
-                <h1>Kumpulan berita</h1>
-                <p class="description">
-                    Kumpulan berita tentang kriminal, teknologi, hiburan, politik, dan korupsi. 
-                    Tekan atau klik pada selengkapnya agar dapat melihat berita tersebut
-                </p>
-                <section class="berita">
-                    <article class="newsCard" tabindex="0">
-                        <img src="styles/assets/kriminal.jpeg" alt="berita kriminal" loading="lazy">
-                        <div class="newsCardBody">
-                            <h2 class="newsTitle">Berita kriminal</h2>
-                            <p class="newsDesc">
-                                Pria di bandar lampung tewas ditusuk
-                            </p>
-                            <p>
-                                <a href="https://www.detik.com/sumbagsel/hukum-dan-kriminal/d-7756572/pria-di-bandar-lampung-tewas-ditusuk-polisi-buru-pelakunya">Selengkapnya</a>
-                            </p>
-                        </div>
-                    </article>
-                </section>
-                <section class="berita">
-                    <article class="newsCard" tabindex="0">
-                        <img src="styles/assets/teknologi.jpg" alt="berita teknologi" loading="lazy">
-                        <div class="newsCardBody">
-                            <h2 class="newsTitle">Berita teknologi</h2>
-                            <p class="newsDesc">
-                                Kemajuan teknologi dan peran program studi sistem informasi
-                            </p>
-                            <p>
-                                <a href="https://news.bsi.ac.id/berita/kemajuan-teknologi-dan-peran-sistem-informasi">Selengkapnya</a>
-                            </p>
-                        </div>
-                    </article>
-                </section>
-                <section class="berita">
-                    <article class="newsCard" tabindex="0">
-                        <img src="styles/assets/hiburan.webp" alt="berita hiburan" loading="lazy">
-                        <div class="newsCardBody">
-                            <h2 class="newsTitle">Berita Hiburan</h2>
-                            <p class="newsDesc">
-                                Disney rilis proyek baru sebagai wahana hiburan
-                            </p>
-                            <p>
-                                <a href="https:/jogja.antaranews.com/berita/709959/disney-rilis--proyek-baru-berbagai-wahana-atraksi-hiburan">Selengkapnya</a>
-                            </p>
-                        </div>
-                    </article>
-                </section>
-                <section class="berita">
-                    <article class="newsCard" tabindex="0">
-                        <img src="korupsi.jpg" alt="berita korupsi" loading="lazy">
-                        <div class="newsCardBody">
-                            <h2 class="newsTitle">Berita korupsi</h2>
-                            <p class="newsDesc">
-                                KPK sedang menyidik kasus gratifikasi pengadaan barang dan jasa di lingkungan
-                            </p>
-                            <p>
-                                <a href="https://www.beritasatu.com/2898758/gratifikasi-tembus-rp-17-m-ini-4-fakta-terbaru-kasus-korupsi-di-mpr">Selengkapnya</a>
-                            </p>
-                        </div>
-                    </article>
-                </section>
-            </main>
-        </div>
+        <main class="container" role="main" aria-label="kumpulan berita">
+            <h1>kumpulan Berita Kuliner dan Wisata di bangka belitung</h1>
+            <p class="description">Kumpulan berita tentang kriminal, teknologi, hiburan, politik, dan korupsi. tekan atau
+                klik pada selengkapnya agar dapat melihat berita tersebut</p>
 
-        <footer class="footer" role="contentinfo">
-            <div class="container footer-content">
-                <p>&copy; 2025 im@website. All rights reserved.</p>
-                <nav aria-label="Social media">
-                    <a href="#" class="social-link" aria-label="Visit ima Tiktok"><span class="matrial-icons-outlined">Tiktok</span></a>
-                    <a href="#" class="social-link" aria-label="Visit ima Facebook"><span class="matrial-icons-outlined">Facebook</span></a>
-                    <a href="#" class="social-link" aria-label="Visit ima Instagram"><span class="matrial-icons-outlined">Instagram</span></a>
-                </nav>
+            <section class="berita">
+
+                <article class="card" tabindex="0" aria-label="Pria dibandar lampung tewas ditusuk, Polisi buru pelakunya">
+                    <img src="styles/assets/WhatsApp Image 2025-07-27 at 12.22.17_57380cc0.jpg" alt="Berita Kriminal" loading="lazy">
+                    <div class="card-body">
+                        <h2 class="card-title">berita lawang budaya pelaksanan pagelaran seni "dek lapuk ujan, dek lakang
+                            panas"</h2>
+                        <p class="card-desc">sanhgar seni lawang budaya kepulauan bangka belitung melaksanaan pagelaran seni
+                            bertajuk"dek lapuk ujan, dek lakang panas" yang menampilkan berbagai karya seni diantarranya
+                            tari, musik,puisi,,mendongeng pencak silat, serta beberapa lagu-lagu daerah kepulauan bangka
+                            belitung di gedung graha maras sungaliat, SABTU (15/20)</p>
+                        <p><a
+                                href="https://babel.antaranews.com/berita/467277/lawang-budaya-laksanakan-pagelaran-seni-dek-lapuk-ujan-dek-lekang-panas">Selengkapnya
+                                →</a></p>
+                    </div>
+                </article>
+
+
+
+
+                <article class="card" tabindex="0" aria-label="teknologi">
+                    <img src="styles/assets/BERITA PANGKAL PINANG.jpg" alt="Berita Tentang Teknologi" loading="lazy">
+                    <div class="card-body">
+                        <h2 class="card-title">Umat Hindu di belitung gelar upacara belitung</h2>
+                        <p class="card-desc">Umat hindu didusun balitung, desa pelapak putih, kecamatan sijuk, kabupaten
+                            belitung, menggelar uparacara melasati guna menyambut hari raya nyepi tahun baru saka 1945 yang
+                            jatuh pada, rabu (22/3) mendatang </p>
+                        <p>
+                            <a
+                                href="https://babelpos.disway.id/read/673233/mengenal-baju-paksian-kekayaan-intelektual-komunal-dari-kota-pangkal-pinang-bangka-belitung">Selengkapnya
+                                →</a>
+                        </p>
+                    </div>
+                </article>
+
+
+
+
+                <article class="card" tabindex="0" aria-label="berita hiburan hari ini">
+                    <img src="styles/assets/berita adat pangkal pinang.jpg" alt="berita hiburan hari ini" loading="lazy">
+                    <div class="card-body">
+                        <h2 class="card-title">Mengenal Baju Paksian, Kekayaan Intelektual Komunal dari Kota Pangkal Pinang
+                            Bangka Belitung</h2>
+                        <p class="card-desc">Kemajuan Teknologi dan Peran Program Studi Sistem Informasi
+                            PANGKALPINANG – kadivyankum Kanwil Kemenkum Bangka Belitung Kaswo, minggu (16/03) mengatakan
+                            bahwa Pakaian Adat Paksian asal kota Pangkal Pinang Bangka Belitung telah tercatat sebagai
+                            Kekayaan Intelektual Komunal di Direktorat Jenderal Kekayaan Intelektual Kementerian Hukum </p>
+                        <p><a
+                                href="https://jogja.antaranews.com/berita/709959/disney-rilis-proyek-baru-berbagai-wahana-atraksi-hiburan">Selengkapnya
+                                →</a></p>
+                    </div>
+                </article>
+
+
+
+            </section>
+
+        </main>
+        <footer>
+            <div class="footer">
+                <p>Bangka Belitung, Pangkalpinang | Web Kelompok 3</p>
             </div>
         </footer>
     </body>
+
 </html>

@@ -1,0 +1,239 @@
+h1 {
+    font-size: 2.5em;
+    color: hsl(0, 0%, 10%);
+    margin-bottom: 1rem;
+}
+.h1white {
+    color: hsl(0, 0%, 90%);
+    text-shadow: 0 2px 8px hsl(0, 0%, 20%);
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.5em;
+    color: hsl(0, 0%, 10%);
+}
+.h2white {
+    color: hsl(30, 60%, 50%);
+    text-shadow: 0 2px 2px hsl(0, 0%, 20%);
+}
+h3 {
+    font-size: 1.3em;
+    color: hsl(0, 0%, 10%);
+}
+.h3white {
+    color: hsl(0, 0%, 90%);
+    text-shadow: 0 2px 8px hsl(0, 0%, 20%);
+}
+p {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: hsl(0, 0%, 10%);
+    text-align: justify;
+    line-height: 2.3rem;
+}
+.pwhite {
+    color: hsl(0, 0%, 90%);
+    text-shadow: 0 2px 8px hsl(0, 0%, 20%);
+    
+}
+.subtext {
+    color: hsl(0, 0%, 30%);
+}
+a {
+    text-decoration: none;
+    font-weight: 550;
+    color: hsl(0, 0%, 80%);
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+}
+a:hover {
+    color: hsl(24, 60%, 47%);
+}
+/* Header Home */
+
+
+.homeContainer {
+    width: 100%;
+    
+    
+    
+}
+.homeHeader {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/header-darken.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.homeee {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 8rem 0;
+    gap: 4rem
+}
+.homeText {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    max-width: 390px;
+}
+.homeImg {
+    height: 350px;
+    width: 550px;
+    border-radius: 16px;
+    background-image: url(assets/header.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px hsl(0, 0%, 20%);
+}
+
+
+
+
+/* Content */
+
+
+.homeContent {
+    background-color: hsl(0, 0%, 85%);
+    box-shadow: 0 0 50px 45px hsl(0, 0%, 85%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.homeContentFrame {
+    background-color: hsl(0, 0%, 15%);
+    width: 80%;
+    margin: 10rem auto;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: -8px 0 hsl(30, 70%, 50%);
+    border: none;
+}
+.idk {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    justify-content: center;
+    align-items: center;
+}
+.heheheha {
+    width: 100%;
+    height: 3px;
+    background-color: hsl(30, 60%, 50%);
+    margin-bottom: 3rem;
+}
+
+
+/* Learn More */
+
+
+.homeCardContainer {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+.homeCardRow {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem
+}
+.homeCard {
+    width: 240px;
+    height: 285px;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 16px;
+
+    display: grid;
+    grid-template-rows: 1fr 0.6fr;
+
+    transition: all 0.3s ease;
+
+}
+.homeCard:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 4px 4px 2px hsl(30, 70%, 50%);
+    letter-spacing: 2px;
+    color: hsl(30, 70%, 50%);
+}
+.homeCard:active {
+    transform: translateY(0);
+    box-shadow: 0 0px hsl(30, 60%, 50%);
+}
+.homeCard p {
+    text-align: center;
+    color: hsl(0, 0%, 85%);
+}
+.homeCardImg {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(30, 60%, 50%);
+    justify-self: center;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+}
+
+.img4 {
+    background-image: url(assets/OIP.webp);
+    background-position: center;
+    background-size: cover;
+}
+.img3 {
+    background-image: url(assets/kuliner.webp);
+    background-position: center;
+    background-size: cover;
+}
+.img2 {
+    background-image: url(assets/BERITA\ PANGKAL\ PINANG.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img1 {
+    background-image: url(assets/map.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Gambar Bawah */
+
+
+.bottomimg {
+    background-image: url(assets/header-darken-bottom.jpg);
+    height: 25vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 780px) {
+    p {
+        font-size: 0.95em;
+        text-align: left;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .homeText {
+        width: 90%;
+    }
+    .homeImg {
+        display: none;
+    }
+    .homeee {
+        grid-template-columns: 1fr;
+    }
+    .homeCardRow {
+    flex-direction: column;
+    }
+    .homeCardContainer {
+        flex-direction: column;
+    }
+}

@@ -1,73 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        
-        <title>Lovan - Home</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>UAS</title>
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/index.css">
+        <script defer src="script/script.js"></script>
     </head>
     <body>
-        <header role="banner" class="header">
-            <div class="container header-container">
-                <a href="index.html" class="brand" aria-label="Ima homepage">Lovan Website</a>
-                <nav role="navigation" aria-label="Primary navigation" class="nav">
-                    <a href="index.html" class="nav-link" tabindex="0">Home</a>
-                    <a href="news.html" class="nav-link" tabindex="0">News</a>
-                    <a href="gallery.html" class="nav-link" tabindex="0">Foto</a>
-                    <a href="video.html" class="nav-link" tabindex="0">Video</a>
-                    <a href="about.html" class="nav-link" tabindex="0">About</a>
-                    <a href="contact.html" class="nav-link" tabindex="0">Contact</a>
-                </nav>
+        <header class="navContainer">
+            <div class="navButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav hidden">
+                <div class="navBack">
+                    <div class="close"></div>
+                    <div class="close2"></div>
+                </div>
+                <ul>
+                    <li ><a href="index.html" class="navList">home</a></li>
+                    <li ><a href="news.html" class="navList">news</a></li>
+                    <li ><a href="photo.html" class="navList">photo</a></li>
+                    <li ><a href="video.html" class="navList">video</a></li>
+                    <li ><a href="profile.html" class="navList">profile</a></li>
+                    <li ><a href="about.html" class="navList">about</a></li>
+                </ul>
             </div>
         </header>
 
-        <main class="main-content">
-            <section class="hero">
-                <div class="container hero-content">
-                    <h1>Welcome to Lovan Website</h1>
-                    <p>Your primary soyrce for latest information in news, photo collections, videos, and innivations</p>
-                    <a href="#" class="btn-primary" role="button">Explore</a>
+        <section class="homeContainer">
+            <div class="homeHeader">
+                <div class="homeee">
+                    <div class="homeText">
+                        <h1 class="h1white">Pangkal Pinang</h1>
+                        <h3 class="h3white">Kota beribu senyuman dan pangkal kemenangan</h3>
+                    </div>
+                    <div class="homeImg">
+                        
+                    </div>
                 </div>
-            </section>
-            <section class="features container">
-                <h2 class="section-title">What we offer</h2>
-                <div class="feature">
-                    <div class="features-grid">
-                        <div class="feature-card" tabindex="0">
-                            <span class="material-icons feature-icon" aria-hidden="true">newspaper</span>
-                            <h3>Latest Tech News</h3>
-                            <p>Stay up-to-date with in-depth coverage of the computer science industry and technology trends.</p>
+            </div>
+            <div class="homeContent">
+                <div class="homeContentFrame">
+                    <div class="idk">
+                        <h2 class="h2white">Kota Pangkal Pinang</h2>
+                        <div class="heheheha"></div>
+                    </div>
+                    <div class="homeContentDesc">
+                        <p class="pwhite">
+                            Kota Pangkalpinang merupakan ibukota dari Provinsi Kepulauan Bangka Belitung yang berada di sebelah timur Pulau Bangka. 
+                            Kota ini berbatasan langsung dengan Kabupaten Bangka di bagian Utara dan Barat, Kabupaten Bangka Tengah di bagian Selatan, 
+                            dan Laut Cina Selatan di bagian Timur.
+                        </p>
+                        <p class="pwhite">
+                            ecara etimologi, nama ‘Pangkalpinang’ berasal dari dua kata yaitu Pangkal yang berarti pusat 
+                            atau awal mula (bahasa Melayu Bangka) sedangkan kata Pinang berasal dari pohon Pinang.
+                        </p>
+                    </div>
+                </div>
+                <h2>Pelajari kota pangkal pinang lebih lanjut</h2>
+                <div class="homeCardContainer">
+                    <div class="homeCardRow">
+                        <div class="homeCard" id="sejarah">
+                            <div class="homeCardImg img1"></div>
+                            <p>Sejarah</p>
                         </div>
-
-                        <div class="feature-card" tabindex="0">
-                            <span class="material-icons feature-icon" aria-hidden="true">school</span>
-                            <h3>Expert Tutorials</h3>
-                            <p>Learn programing, system design, and much more with detailed, easy-to-follow tutorials.</p>
+                        <div class="homeCard" id="budaya">
+                            <div class="homeCardImg img2"></div>
+                            <p>Budaya</p>
                         </div>
-
-                        <div class="feature-card" tabindex="0">
-                            <span class="material-icons feature-icon" aria-hidden="true">forum</span>
-                            <h3>Community Support</h3>
-                            <p>Join discussions with fellow tech enthusiasts and professionals to solve problems and share knowledge.</p>
+                    </div>
+                    <div class="homeCardRow">
+                        <div class="homeCard" id="kuliner">
+                            <div class="homeCardImg img3"></div>
+                            <p>Kuliner</p>
+                        </div>
+                        <div class="homeCard" id="wisata">
+                            <div class="homeCardImg img4"></div>
+                            <p>Wisata&lainnya</p>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+            <div class="bottomimg"></div>
+        </section>
 
-        <footer class="footer" role="contentinfo">
-            <div class="container footer-content">
-                <p>&copy; 2025 Lovan Website. All rights reserved.</p>
-                <nav aria-label="Social media">
-                    <a href="#" class="social-link" aria-label="Visit ima Tiktok"><span class="matrial-icons-outlined">Tiktok</span></a>
-                    <a href="#" class="social-link" aria-label="Visit ima Facebook"><span class="matrial-icons-outlined">Facebook</span></a>
-                    <a href="#" class="social-link" aria-label="Visit ima Instagram"><span class="matrial-icons-outlined">Instagram</span></a>
-                </nav>
+        <footer>
+            <div class="footer">
+                <p>Bangka Belitung, Pangkalpinang | Web Kelompok 3</p>
             </div>
         </footer>
     </body>

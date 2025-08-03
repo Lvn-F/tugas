@@ -1,0 +1,44 @@
+                <div class="footerItem">
+                    <h3 class="h3white">Follow Us</h3>
+                    <div class="footerSegment">
+                        <div class="footerImg"></div>
+                        <div class="footerText">
+                            <p><a href="https://www.instagram.com/nggrl12/?igsh=MWVsaHh3ZHk0aXcycw%3D%3D#">@nggrl12</a></p>
+                            <p><a href="https://www.instagram.com/imamprasetiyoo/?igsh=MXBzZW9mNXcxdXpjOA%3D%3D#">@imamprasetiyoo</a></p>
+                            <p><a href="https://www.instagram.com/ajiiprasetyooo_/?igsh=MXJobG5wYnA2bWFqeg%3D%3D#">@ajiiprasetyooo_</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerItem">
+                    <h3 class="h3white">About</h3>
+                    <p><a href="#"></a></p>
+                    <p><a href="#"></a></p>
+                    <p><a href="#"></a></p>
+                </div>
+
+
+.footerItem {
+    transform: translateX(-25%);
+}
+.footerItem a {
+    font-size: 1em;
+}
+.footerItem h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.footerSegment {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 0.5rem;
+}
+.footerImg {
+    background-image: url(assets/ig.webp);
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+
+    align-self: center;
+    justify-self: center;
+}
